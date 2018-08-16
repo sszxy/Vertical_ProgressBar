@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.progressbar.MainActivity">
+    <RelativeLayout
+        android:layout_marginLeft="100dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <com.example.progressbar.Myprogressbar
+        android:id="@+id/Myprogress"
+        android:indeterminateOnly="false"
+        android:max="408"
+        android:progress="300"
+        android:progressDrawable="@drawable/myprogressbar"
+        android:layout_width="62dp"
+        android:layout_height="136dp" />
+     <ImageView
+         android:id="@+id/del"
+         android:src="@drawable/reduce"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="112dp"
+         android:layout_width="20dp"
+         android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/add"
+            android:src="@drawable/add"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4.5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:layout_marginTop="56dp"
+            android:src="@drawable/sun"
+            android:layout_centerHorizontal="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginLeft="30dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <com.example.progressbar.Textprogressbar
+            android:id="@+id/text_Myprogress"
+            android:indeterminateOnly="false"
+            android:max="408"
+            android:progress="272"
+            android:progressDrawable="@drawable/myprogressbar"
+            android:layout_width="62dp"
+            android:layout_height="136dp" />
+        <ImageView
+            android:id="@+id/text_del"
+            android:src="@drawable/reduce"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="112dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:id="@+id/text_add"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add"
+            android:layout_marginTop="4.5dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="54dp"
+            android:layout_width="15dp"
+            android:layout_height="22dp"
+            android:src="@drawable/text"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
